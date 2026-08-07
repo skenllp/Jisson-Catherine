@@ -1179,6 +1179,25 @@ body.finale-particles .finale-fallback{opacity:0}
 .gratitude-phone:hover{opacity:1}
 .gratitude-phone .ico{width:15px;height:15px;stroke-width:4;flex:none}
 
+.gratitude-wishes{margin-top:16px;}
+.gratitude-wishes-title{
+  font-family:var(--f-title);
+  font-size:clamp(11px,2.8vw,12.5px);letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold-lt);opacity:.9;margin-bottom:14px;
+}
+.gratitude-wishes-grid{
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  font-family:var(--f-display);font-size:clamp(16px,4vw,19.5px);
+  color:#FBF5E8;line-height:1.6;font-weight:300;
+}
+.gratitude-wish-group{text-align:center;}
+.gratitude-wish-name{font-weight:400;color:#FBF5E8;margin:0;}
+.gratitude-wish-amp{font-style:italic;color:var(--gold-lt);font-size:.9em;margin:0 2px;}
+.gratitude-wish-blessing{
+  font-style:italic;font-size:clamp(12.5px,3.2vw,14px);
+  color:rgba(245,235,218,.75);margin-top:4px;
+}
+
 /* ============================================================
    12 · RESPONSIVE
    ============================================================ */
