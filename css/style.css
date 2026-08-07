@@ -886,6 +886,7 @@ body:not(.is-revealed) #site *{animation-play-state:paused!important}
 .btn--gold:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(184,148,42,.95)}
 .btn--ghost{border:1px solid rgba(184,148,42,.55);color:var(--brass)}
 .btn--ghost:hover{background:rgba(184,148,42,.1);transform:translateY(-2px)}
+.btn--sm{padding:9px 20px;font-size:10px;letter-spacing:.18em;}
 .btn:active{transform:translateY(0) scale(.98)}
 
 /* ---------- gallery ---------- */
