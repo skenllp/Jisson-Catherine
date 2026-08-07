@@ -778,6 +778,32 @@ body:not(.is-revealed) #site *{animation-play-state:paused!important}
   grid-template-columns:1fr auto 1fr;justify-items:center;
 }
 .person{text-align:center;max-width:320px;}
+.person-card{
+  position:relative;
+  padding:clamp(26px,5vw,36px) clamp(20px,4vw,28px);
+  border-radius:6px;
+  background:rgba(255,255,255,0.04);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border:1px solid rgba(212,184,106,0.3);
+  box-shadow:0 12px 36px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.08);
+  transition:transform .55s var(--ease),box-shadow .55s var(--ease),border-color .55s var(--ease);
+  width:100%;
+  box-sizing:border-box;
+}
+.person-card::after{
+  content:"";
+  position:absolute;
+  inset:6px;
+  border:1px solid rgba(212,184,106,0.18);
+  border-radius:4px;
+  pointer-events:none;
+}
+.person-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(212,184,106,0.55);
+  box-shadow:0 18px 48px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.12);
+}
 .person-role{font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-lt);opacity:.85;margin-bottom:8px;}
 .person-name{font-family:var(--f-script);font-weight:400;font-size:clamp(26px,6.5vw,38px);color:#FBF5E8;margin:0 0 8px;line-height:1.2;}
 .person-line{font-size:13.5px;color:rgba(245,235,218,.78);line-height:1.85;}
